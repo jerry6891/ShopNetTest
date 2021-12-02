@@ -11,7 +11,7 @@ import SwiftUI
 struct Shopnet_TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(stats: Color.clear)
         }
     }
 }

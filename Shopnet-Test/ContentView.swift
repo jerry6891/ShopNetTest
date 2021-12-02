@@ -22,6 +22,7 @@ struct ContentView: View {
     
     // Create RAM' Articles Empty State Object
     @State var ramArticles: [Model] = []
+    let stats: Color
     
     var body: some View {
         
@@ -41,12 +42,12 @@ struct ContentView: View {
                                 
                                 HStack {
                                     Circle()
-                                        .stroke(Color.green, style: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [1]))
+                                        .stroke(character.status.stats(), style: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [1]))
                                         .frame(width: 10, height: 10)
                                     
                                     Text(character.status)
                                         .font(.subheadline)
-                                        .foregroundColor(Color.gray)
+                                        .foregroundColor(character.status.stats())
                                 }
                                     Text(character.location.locatioName)
                                         .font(.system(size: 12))
@@ -64,19 +65,8 @@ struct ContentView: View {
     }
 }
 
-// Function Attempt on Status Color Depending on Each Character
-func getStatus() {
-    if try! Model(from: RAMMResponse.self as! Decoder).status == "Alive" {
-        _ = CGColor(red: 0, green: 255, blue: 0, alpha: 1)
-    } else if try! Model(from: RAMMResponse.self as! Decoder).status == "Dead" {
-        _ = CGColor(red: 255, green: 0, blue: 0, alpha: 1)
-    } else if try! Model(from: RAMMResponse.self as! Decoder).status == "Unknown" {
-        _ = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().preferredColorScheme(.dark)
+        ContentView(stats: Color.clear).preferredColorScheme(.dark)
     }
 }
