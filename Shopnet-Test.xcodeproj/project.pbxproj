@@ -15,6 +15,11 @@
 		D0002E4A27592F3800B0F0EA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0002E4927592F3800B0F0EA /* ViewModel.swift */; };
 		D0002E4C275943B800B0F0EA /* SingleCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0002E4B275943B800B0F0EA /* SingleCharacterView.swift */; };
 		D0375B65275987E400F06040 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0375B64275987E400F06040 /* String+Extension.swift */; };
+		D0EEFD51275A5E9800795AE0 /* ScrollableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEFD50275A5E9800795AE0 /* ScrollableModel.swift */; };
+		D0EEFD53275A5ED000795AE0 /* ScrollableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEFD52275A5ED000795AE0 /* ScrollableViewModel.swift */; };
+		D0EEFD55275A644600795AE0 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEFD54275A644600795AE0 /* CharacterView.swift */; };
+		D0EEFD57275A64E800795AE0 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEFD56275A64E800795AE0 /* CharacterList.swift */; };
+		D0EEFD59275A655300795AE0 /* ScrollableMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EEFD58275A655300795AE0 /* ScrollableMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,12 @@
 		D0002E4927592F3800B0F0EA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D0002E4B275943B800B0F0EA /* SingleCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCharacterView.swift; sourceTree = "<group>"; };
 		D0375B64275987E400F06040 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D0B839F42759C5DE006344E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D0EEFD50275A5E9800795AE0 /* ScrollableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableModel.swift; sourceTree = "<group>"; };
+		D0EEFD52275A5ED000795AE0 /* ScrollableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableViewModel.swift; sourceTree = "<group>"; };
+		D0EEFD54275A644600795AE0 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		D0EEFD56275A64E800795AE0 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		D0EEFD58275A655300795AE0 /* ScrollableMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +70,8 @@
 		D0002E3827592BF200B0F0EA /* Shopnet-Test */ = {
 			isa = PBXGroup;
 			children = (
+				D0EEFD4F275A5D8800795AE0 /* Scrollable */,
+				D0B839F42759C5DE006344E7 /* Info.plist */,
 				D0002E3927592BF200B0F0EA /* Shopnet_TestApp.swift */,
 				D0002E3B27592BF200B0F0EA /* ContentView.swift */,
 				D0002E3D27592BF300B0F0EA /* Assets.xcassets */,
@@ -77,6 +90,18 @@
 				D0002E4027592BF300B0F0EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0EEFD4F275A5D8800795AE0 /* Scrollable */ = {
+			isa = PBXGroup;
+			children = (
+				D0EEFD50275A5E9800795AE0 /* ScrollableModel.swift */,
+				D0EEFD52275A5ED000795AE0 /* ScrollableViewModel.swift */,
+				D0EEFD54275A644600795AE0 /* CharacterView.swift */,
+				D0EEFD56275A64E800795AE0 /* CharacterList.swift */,
+				D0EEFD58275A655300795AE0 /* ScrollableMainView.swift */,
+			);
+			path = Scrollable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EEFD51275A5E9800795AE0 /* ScrollableModel.swift in Sources */,
 				D0002E4C275943B800B0F0EA /* SingleCharacterView.swift in Sources */,
 				D0002E4827592C9900B0F0EA /* Model.swift in Sources */,
+				D0EEFD53275A5ED000795AE0 /* ScrollableViewModel.swift in Sources */,
 				D0002E3C27592BF200B0F0EA /* ContentView.swift in Sources */,
 				D0002E4A27592F3800B0F0EA /* ViewModel.swift in Sources */,
+				D0EEFD55275A644600795AE0 /* CharacterView.swift in Sources */,
+				D0EEFD59275A655300795AE0 /* ScrollableMainView.swift in Sources */,
+				D0EEFD57275A64E800795AE0 /* CharacterList.swift in Sources */,
 				D0375B65275987E400F06040 /* String+Extension.swift in Sources */,
 				D0002E3A27592BF200B0F0EA /* Shopnet_TestApp.swift in Sources */,
 			);
@@ -288,6 +318,7 @@
 				DEVELOPMENT_TEAM = TF8D87F4XS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shopnet-Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +348,7 @@
 				DEVELOPMENT_TEAM = TF8D87F4XS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shopnet-Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -13,6 +13,7 @@ struct Model: Codable, Identifiable {
     
     // Enumeration Of The Requested JSON Properties
     enum CodingKeys: String, CodingKey {
+        case id
         case name
         case status
         case image
@@ -20,7 +21,7 @@ struct Model: Codable, Identifiable {
     }
     
     // Defines The API/JSON Properties
-    var id = UUID()
+    var id: Int
     var name: String
     var status: String
     var image: String

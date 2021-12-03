@@ -17,6 +17,7 @@ struct SingleCharacterView: View {
                 Image(uiImage: character.image.load())
                     .resizable()
                     .frame(width: 300, height: 300)
+                    .cornerRadius(30.0)
                 
                 Text("Name: \(character.name)")
                     .font(.headline)

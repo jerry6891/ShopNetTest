@@ -6,9 +6,9 @@
 //
 
 import Foundation
+import Combine
 
 class ViewModel {
-    
     // Starts the Method of 'GET' the Users
     func getCharacter(completion: @escaping ([Model]) -> ()) {
         guard let url = URL(string: "https://rickandmortyapi.com/api/character") else { return }
